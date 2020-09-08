@@ -28,7 +28,7 @@ get "/say/:word1/:word2/:word3/:word4/:word5" do
 end
 
 get "/:operation/:number1/:number2" do
-  
+
   @oper = paramas[:operation]
   @num1 = params[:number1].to_i
   @num2 = paras[:number2].to_i
@@ -39,13 +39,13 @@ get "/:operation/:number1/:number2" do
 
   when"add"
     (@num1 + @num2).to_s
-    
+
   when"multiply"
     (@num1 * @num2).to_s
-    
+
   when"divide"
     (@num1 / @num2).to_s
-    
+
   end
 end
 end
