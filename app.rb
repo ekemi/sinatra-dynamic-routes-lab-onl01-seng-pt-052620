@@ -27,12 +27,12 @@ get "/say/:word1/:word2/:word3/:word4/:word5" do
  @user
 end
 
-get "/:operation/:number1/:number2" do 
+get "/:operation/:number1/:number2" do
   @oper = paramas[:operation]
   @num1 = params[:number1]
   @num2 = paras[:number2]
 
-  case @oper 
+  case @oper
   when "subtract"
     "#{@num1 - @num2}to_s"
 
