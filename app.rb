@@ -34,14 +34,14 @@ get "/:operation/:number1/:number2" do
 
   case @oper
   when "subtract"
-    "#{@num1 - @num2}to_s"
+    (@num2 - @num1).to_s
 
   when"add"
-    "#{@num1+@num2}to_s"
+    (@num1+@num2).to_s
   when"multiply"
-    "#{@num1 * @num2}to_s"
+    (@num1 * @num2}).to_s
   when"divide"
-    "#{@num1 / @num2}to_s"
+    (@num1 / @num2).to_s
   end
 end
 end
